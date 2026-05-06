@@ -1,0 +1,28 @@
+a=int(input("Enter value of a: "))
+b=int(input("Enter value of b: "))
+
+operation=input("add/sub/mul/div/mod/pow: ")
+
+if operation=="add":
+    print("Answer:", a+b)
+
+elif operation=="sub":
+    print("Answer:", a-b)
+
+elif operation=="mul":
+    print("Answer:", a*b)
+
+elif operation=="div":
+    if b!=0:
+        print("Answer:", a/b)
+    else:
+        print("Cannot divide by zero")
+
+elif operation=="mod":
+    print("Answer:", a%b)
+
+elif operation=="pow":
+    print("Answer:", a**b)
+
+else:
+    print("Invalid operation")
